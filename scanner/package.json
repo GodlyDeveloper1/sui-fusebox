@@ -1,0 +1,21 @@
+{
+  "name": "fusebox-scanner",
+  "version": "0.1.0",
+  "description": "Finds old Sui package versions that can still modify live protocol objects",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": { "fusebox": "dist/src/cli.js" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/analyze.test.js",
+    "scan": "node dist/src/cli.js scan"
+  },
+  "dependencies": {
+    "@mysten/move-bytecode-template": "^0.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
