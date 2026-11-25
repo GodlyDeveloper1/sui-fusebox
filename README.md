@@ -121,3 +121,7 @@ The first run of this scan reported 6 HIGH findings. All were false alarms, and 
 2. Add the live-object pass: which flagged types have shared objects, and what they hold.
 3. Build the public exposure map from scanner output.
 4. Add an AMM rule set to `fuse`, then get the library audited.
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE).
